@@ -1,7 +1,4 @@
-# CIS129 Programming and Problem Solving I
-# 20781 SPRING 2022
 # Module 6 EC Lab - Yum Yum Burger Joint
-# Phong Duong
 
 # The main function
 def main():

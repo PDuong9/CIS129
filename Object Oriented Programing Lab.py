@@ -1,6 +1,4 @@
 # Module 9 Lab Object Oriented Programing
-# CIS 129 Programing and Problem Solving I
-# Phong Duong
 
 # Pet Class
 class Pet():
@@ -32,18 +30,47 @@ class Pet():
 
 # main module
 def main():
+    #Initialize variable
+    endProgram = 'no'
+    #This while loop to run the program again
+    while endProgram == 'no':
+        # Get values for a pet
+        inputName = input("Enter a pet's name:\n")
+        inputType = input("Enter a pet's type:\n")
+        inputAge = inputUser("Enter a pet's age:\n")
 
-    # Get values for a pet
-    inputName = input("Enter a pet's name:\n")
-    inputType = input("Enter a pet's type:\n")
-    inputAge = int(input("Enter a pet's age:\n"))
+        # Create an object from the Pet class
+        animal = Pet(inputName, inputType, inputAge)
 
-    # Create an object from the Pet class
-    animal = Pet(inputName, inputType, inputAge)
+        # Show values for this pet
+        print('The pet name is', animal.getName())
+        print('The pet type is', animal.getType())
+        print('The pet age is', animal.getAge())
 
-    # Show values for this pet
-    print('The pet name is', animal.getName())
-    print('The pet type is', animal.getType())
-    print('The pet age is', animal.getAge())
+        #Ask the user
+        endProgram = input('Do you want to end the program? (Enter yes or no)\n')
+        #This while loop will checking the answer from users
+        while endProgram != 'yes' and endProgram != 'no':
+            print('Please enter yes or no')
+            endProgram = input('Do you want to end the program?\n')
+        if endProgram != 'yes':
+            print()
+            print('===== Please keep going! =====')
+            print()
+        elif endProgram != 'no':
+            print()
+            print('===== Thank you for using the program! =====')
+            print()
+
+#Input validation functions
+def inputUser(msg):
+    while True:
+        try:
+            num = int(input(msg))
+            if not num < 0:
+                return num
+            print('No negative numbers')
+        except:
+            print('Please enter a whole numbers! No leters, negative numbers, or decimals')
 
 main() # call main

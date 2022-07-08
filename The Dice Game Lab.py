@@ -1,6 +1,4 @@
 # Lab 7-3 The Dice Game
-# CIS 129 Programming and Problem Solving I
-# Phong Duong
 
 # import library
 import random

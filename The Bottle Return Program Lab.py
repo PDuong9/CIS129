@@ -1,6 +1,4 @@
 # Lab 6 The Bottle Return Program
-# Phong Duong
-# March 30, 2022
 # The program will keep track of the total number of bottles collected for 7 days. It will calculate the total number of bottles
 # returned for the week and the amount paid out.
 

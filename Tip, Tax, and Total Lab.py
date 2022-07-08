@@ -1,7 +1,4 @@
-# CIS129 Programing and Problem Solving I
-# Instructor: Brittany Griwzow
 # Module 5 EC Lab - Tip, Tax, and Total
-# Phong Duong
 
 # Global Constant variable for the 6% tax on a meal price
 TAX = 0.06

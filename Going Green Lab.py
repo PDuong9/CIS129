@@ -38,16 +38,22 @@ def main():
         while endProgram != 'yes' and endProgram != 'no':
             print('Please enter yes or no')
             endProgram = input('Do you want to end the program?\n')
-        #The program ends when main is over
-        print()
-        print('=== Thank you for using the program! ===')
-        print()
+        if endProgram != 'yes':
+            print()
+            print('=== Please keep going! ===')
+            print()
+        if endProgram != 'no':
+            print()
+            print('=== Thank you for using the program! ===')
+            print()
 #Input validation functions
 def userInput(msg):
     while True:
         try:
             num = float(input(msg))
-            return num
+            if not num < 0:
+                return num
+            print('No negative numbers')
         except:
             print('Please enter a whole number! No leters or decimals')
 #Outcome function

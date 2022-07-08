@@ -1,6 +1,4 @@
 # Lab 7 Theater Seating Lab
-# CIS 129 Programming and Problem Solving I
-# Phong Duong
 
 # Constant variables each seating section
 SEAT_SECTION_A = 300
